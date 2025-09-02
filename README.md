@@ -1,2 +1,4 @@
-# projeto-eletiva-xhopii
-Atividade em dupla de Linguagem de programação para web
+# Projeto-eletiva-xhopii
+
+Trabalho Prático 1 – Front-End
+Xhopii - Sistema WEB E-commerce
