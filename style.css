@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    font-family: Helvetica,     Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 80px;
+    background-color: #fb5630;
+}
+
+.cabecalho img {
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.nav-paginas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #d7d7d7;
+}
+
+.nav-paginas ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-paginas li{
+    color: #fb5630;
+}
+
+.produto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+.produto .produto_carrossel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.produto .produto_carrossel .cores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.produto .produto_carrossel .cores img{
+    width: 100px;
+}
+
+.produto .produto_carrossel .cor-selecionada img{
+    width: 100%;
+}
+
+.produto .produto_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produto .produto_infos h3{
+    font-size: 28px;
+}
+/* Precisa separar os radio buttons */
+.produto .produto_infos .preco {
+    color: #fb5630;
+}
+
+.selecionar-mod-tam {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    height: 100%;
+}
+
+.selecionar-mod-tam .opcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.selecionar-mod-tam .opcoes article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.selecionar-mod-tam input[type="radio"] {
+    display: grid;
+    place-content: center;
+    
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+}
+
+.selecionar-mod-tam .opcoes label{
+    position: absolute;
+    z-index: -1;
+}
+
+.selecionar-mod-tam input[type="radio"]:hover{
+    border-color: #fb5630;
+    cursor: pointer;
+}
+
+.selecionar-mod-tam input[type="radio"]::before {
+    width: 48px;
+    height: 48px;
+    border: 1px #fb5630 solid;
+    
+    content: "";
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+.selecionar-mod-tam input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+/* BOTÃO DE "Comprar Agora" */
+.selecionar-mod-tam input[type="submit"] {
+    border: none;
+    padding: 20px 10px;
+    color: #fff;
+    background-color: #fb5630;
+    cursor: pointer;
+}
