@@ -22,6 +22,20 @@ function mudarPreco(botaoEscolhido){
     else if(botaoEscolhido.id == "btnModeloRosa"){
         document.getElementById('precoProduto').innerHTML = "R$ 69,90";
         document.getElementById('qtdDisponivel').innerHTML = "319 peças disponíveis";
+    }    
+}
+
+function mudarDisponivel (botaoEscolhido){
+    if (botaoEscolhido.id == "btnTamanhoP"){
+        document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: P";
     }
-    
+    else if (botaoEscolhido.id == "btnTamanhoM"){
+        document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: M";
+    }
+    else if (botaoEscolhido.id == "btnTamanhoG"){
+        document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: G";
+    }
+    else if (botaoEscolhido.id == "btnTamanhoGG"){
+        document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: GG";
+    }
 }
