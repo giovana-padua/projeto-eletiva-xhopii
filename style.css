@@ -85,7 +85,7 @@
     color: #fb5630;
 }
 
-.selecionar-mod-tam {
+.produto_infos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -94,60 +94,20 @@
     height: 100%;
 }
 
-.selecionar-mod-tam .opcoes{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 20px 10px;
-}
-
-.selecionar-mod-tam .opcoes article {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.produto_infos button.botao {
     width: 50px;
     height: 50px;
-}
-
-.selecionar-mod-tam input[type="radio"] {
-    display: grid;
-    place-content: center;
-    
-    appearance: none;
-    width: 100%;
-    height: 100%;
     border: 1px solid #d7d7d7;
+    background-color: transparent;
 }
 
-.selecionar-mod-tam .opcoes label{
-    position: absolute;
-    z-index: -1;
-}
-
-.selecionar-mod-tam input[type="radio"]:hover{
+.produto_infos button.botao:hover{
     border-color: #fb5630;
     cursor: pointer;
 }
 
-.selecionar-mod-tam input[type="radio"]::before {
-    width: 48px;
-    height: 48px;
-    border: 1px #fb5630 solid;
-    
-    content: "";
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-}
-
-.selecionar-mod-tam input[type="radio"]:checked::before {
-    transform: scale(1);
-}
-
 /* BOTÃO DE "Comprar Agora" */
-.selecionar-mod-tam input[type="submit"] {
+.produto_infos #botaoComprar {
     border: none;
     padding: 20px 10px;
     color: #fff;
