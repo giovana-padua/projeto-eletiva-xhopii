@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../script.js"></script>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img src="../img/logo.png" alt="Duas sacolas de compras">
+        <h1>Xhopii</h1>
+    </header>
+
+    <nav class="nav-paginas">
+        <ul>
+            <li>Home</li>
+            <li>Cadastro Cliente</li>
+            <li>Cadastro Funcionário</li>
+            <li>Cadastro Produto</li>
+            <li>Ver Clientes</li>
+            <li>Ver Funcionários</li>
+            <li>Ver Produtos</li>
+        </ul>
+    </nav>
+
+    <section class="produto">
+        <section class="produto_carrossel">
+            <section class="cores">
+                <img src="../img/produto1.png" alt="Camiseta Preta com estampa">
+                <img src="../img/produto2.png" alt="Camiseta Azul com estampa">
+                <img src="../img/produto3.png" alt="Camiseta Verde com estampa">
+                <img src="../img/produto4.png" alt="Camiseta Cinza com estampa">
+                <img src="../img/produto5.png" alt="Camiseta Rosa com estampa">
+            </section>
+
+            <section class="cor-selecionada">
+                <img id="imgPrincipal" src="../img/produto1.png" alt="Camiseta Preta com estampa">
+            </section>
+
+        </section>
+
+        <section class="produto_infos">
+            <h3 class="nome">Camisa Desenvolvedor Front-End CSS</h3>
+            <h3 id="precoProduto" class="preco">R$ 56,90</h3>
+            <p id="qtdDisponivel" class="qtd-disponivel">171 peças disponíveis</p>
+
+            <section>
+                <p>Modelos:</p>
+                <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
+                <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
+                <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
+                <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button>
+                <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
+            </section>
+
+            <section>
+                <p>Tamanhos:</p>
+                <button class="botao" id="btnTamanhoP" onclick="mudarTamanho(this)">P</button>
+                <button class="botao" id="btnTamanhoM" onclick="mudarTamanho(this)">M</button>
+                <button class="botao" id="btnTamanhoG" onclick="mudarTamanho(this)">G</button>
+                <button class="botao" id="btnTamanhoGG" onclick="mudarTamanho(this)">GG</button>
+            </section>
+
+            <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
+            <button id="botaoComprar">Comprar Agora</button>
+        </section>
+
+    </section>
+    
+</body>
+</html>
