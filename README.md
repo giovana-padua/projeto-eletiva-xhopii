@@ -19,6 +19,7 @@ Xhopii - Sistema WEB E-commerce
 ### Interfaces (Front-End):
 
 - Login - Obrigatório - **Gi**
+> Usei HTML Semântico, CSS, FlexBox e Grid Layout
 - Redefinição de Senha - Obrigatório
 - Home - Obrigatório - **Ana**
 - Cadastrar Cliente - Obrigatório
