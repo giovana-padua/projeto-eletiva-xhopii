@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #f5f5f5;
+}
+
+.logo_entre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho .logo_entre .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho .logo_entre .logo h1.nome_site {
+    color: #fb5630;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cabecalho .logo_entre h1 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.cabecalho p {
+    color: #fb5630;
+    font-size: 14px;
+}
+
+.cabecalho p:hover {
+    color: #f58268;
+    cursor: pointer;
+}
+
+/* - - - - - - - - - */
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+    background-color: #fb5630;
+}
+
+.corpo .entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+    min-width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.corpo .entrar h3 {
+    font-weight: 400;
+}
+
+.corpo form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.corpo form input {
+    padding: 10px;
+    border: 2px #d7d7d7 solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.corpo form input[type="submit"] {
+    border: none;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fb5630;
+}
+
+.corpo form input[type="submit"]:hover {
+    background-color: #ef4d28;
+    cursor: pointer;
+}
+
+.redefinir_sms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.redefinir_sms p {
+    color: #0000ff;
+    font-size: 14px;
+}
+
+.redefinir_sms p:hover {
+    color: #5672ec;
+    cursor: pointer;
+}
+
+.divisor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.divisor div {
+    width: 46%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #d7d7d7;
+}
+
+.divisor p {
+    color: #d7d7d7;
+}
+
+.redes_sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.redes_sociais button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 30%;
+    border-radius: 5px;
+    border: 2px #d7d7d7 solid;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.redes_sociais button:hover {
+    border-color: #979797;
+    cursor: pointer;
+}
+
+.redes_sociais button img {
+    width: 20px;
+}
+
+.cadastrar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cadastrar p {
+    color: #d7d7d7;
+    font-size: 1em;
+}
+
+.cadastrar a {
+    color: #fb5630;
+}
+
+.cadastrar a:hover {
+    color: #f58268;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+    text-align: justify;
+}
+
+.infos section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+}
+
+h4.titulo_secao_footer {
+    color: #272727;
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.infos section p {
+    color: #979797;
+    font-size: .8em;
+}
+
+.pagamento section.imgs-grid {
+    display: grid;
+    grid-template-rows: 20px 20px 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.siga article {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.siga img {
+    width: 20px;
+}
+
+.direitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-top: 1px #979797 solid;
+    padding: 10px;
+    color: #272727;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .infos {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    h4.titulo_secao_footer {
+        font-size: .9em;
+    }
+    
+    .infos section p {
+        font-size: .7em;
+    }
+}
