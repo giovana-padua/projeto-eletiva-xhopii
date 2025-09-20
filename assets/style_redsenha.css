@@ -61,9 +61,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    min-height: 530px;
 
-    background-color: #fb5630;
+    background-color: #fff;
 }
 
 .corpo .entrar {
@@ -71,11 +72,25 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 35%;
+    position: relative;
+    width: 40%;
     min-width: 350px;
     border-radius: 5px;
-    padding: 30px 30px 50px;
+    padding: 40px 35px 60px;
     background-color: #fff;
+    box-shadow: 0px 5px 8px 2px #0000006e;
+}
+
+.corpo .entrar img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: .8;
+}
+
+.corpo .entrar img:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 
 .corpo .entrar h3 {
@@ -85,11 +100,13 @@
 .corpo form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
     width: 100%;
 }
 
 .corpo form input {
+    width: 458px;
     padding: 10px 25px;
     border: 2px #d7d7d7 solid;
     border-radius: 5px;
@@ -106,94 +123,6 @@
 
 .corpo form input[type="submit"]:hover {
     background-color: #ef4d28;
-    cursor: pointer;
-}
-
-.redefinir_sms {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.redefinir_sms p {
-    color: #0000ff;
-    font-size: 14px;
-}
-
-.redefinir_sms p:hover {
-    color: #5672ec;
-    cursor: pointer;
-}
-
-.divisor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.divisor div {
-    width: 46%;
-    height: 2px;
-    border-radius: 5px;
-    background-color: #d7d7d7;
-}
-
-.divisor p {
-    color: #d7d7d7;
-}
-
-.redes_sociais {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.redes_sociais button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    width: 30%;
-    border-radius: 5px;
-    border: 2px #d7d7d7 solid;
-    padding: 10px;
-    background-color: transparent;
-}
-
-.redes_sociais button:hover {
-    border-color: #979797;
-    cursor: pointer;
-}
-
-.redes_sociais button img {
-    width: 20px;
-}
-
-.cadastrar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.cadastrar p {
-    color: #d7d7d7;
-    font-size: 1em;
-}
-
-.cadastrar a {
-    color: #fb5630;
-}
-
-.cadastrar a:hover {
-    color: #f58268;
     cursor: pointer;
 }
 
