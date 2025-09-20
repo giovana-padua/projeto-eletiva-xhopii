@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    font-family: Helvetica,     Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 80px;
+    background-color: #fb5630;
+}
+
+.cabecalho img {
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.nav-paginas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #fb772f;
+}
+
+.nav-paginas ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-paginas li {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.nav-paginas li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-paginas li:hover {
+    background-color: #fb5630;
+    cursor: pointer;
+}
+
+.nav-paginas li.active {
+    background-color: #fb5630;
+}

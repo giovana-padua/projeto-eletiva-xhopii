@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Helvetica,     Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .cabecalho {
@@ -32,12 +33,19 @@
 .nav-paginas ul {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     list-style: none;
 }
 
-.nav-paginas li{
+.nav-paginas li {
+    border-radius: 8px;
+    padding: 5px;
     color: #fb5630;
+}
+
+.nav-paginas li:hover {
+    border: 1px #fb5630 solid;
+    cursor: pointer;
 }
 
 .produto {

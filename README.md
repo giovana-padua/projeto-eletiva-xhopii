@@ -19,13 +19,12 @@ Xhopii - Sistema WEB E-commerce
 ### Interfaces (Front-End):
 
 - Login - Obrigatório - **Gi**
-> Usei HTML Semântico, CSS, FlexBox e Grid Layout
-> Falta o redirecionamento do botão "Entre"
+> Usei HTML Semântico, CSS, FlexBox e Grid Layout | Falta o redirecionamento do botão "Entre"
 - Redefinição de Senha - **Gi**
-> Usei HTML Semântico, CSS e FlexBox
-> Falta o redirecionamento do botão "Enviar"
+> Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
 - Home - Obrigatório - **Ana**
-- Cadastrar Cliente - Obrigatório
+- Cadastrar Cliente - **Gi**
+> Fazendo
 - Cadastrar Funcionário - Obrigatório
 - Cadastrar Produto – Obrigatório
 - Cadastrar Cupom de desconto - Obrigatório
