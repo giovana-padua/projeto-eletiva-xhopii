@@ -20,7 +20,10 @@ Xhopii - Sistema WEB E-commerce
 
 - Login - Obrigatório - **Gi**
 > Usei HTML Semântico, CSS, FlexBox e Grid Layout
-- Redefinição de Senha - Obrigatório
+> Falta o redirecionamento do botão "Entre"
+- Redefinição de Senha - **Gi**
+> Usei HTML Semântico, CSS e FlexBox
+> Falta o redirecionamento do botão "Enviar"
 - Home - Obrigatório - **Ana**
 - Cadastrar Cliente - Obrigatório
 - Cadastrar Funcionário - Obrigatório
