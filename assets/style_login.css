@@ -66,7 +66,7 @@
     background-color: #fb5630;
 }
 
-.corpo .entrar {
+.corpo .form_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,7 @@
     background-color: #fff;
 }
 
-.corpo .entrar h3 {
+.corpo .form_container h3 {
     font-weight: 400;
 }
 

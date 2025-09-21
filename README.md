@@ -24,7 +24,7 @@ Xhopii - Sistema WEB E-commerce
 > Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
 - Home - Obrigatório - **Ana**
 - Cadastrar Cliente - **Gi**
-> Fazendo
+> Usei HTML Semântico, CSS, FlexBox e Grid Layout
 - Cadastrar Funcionário - Obrigatório
 - Cadastrar Produto – Obrigatório
 - Cadastrar Cupom de desconto - Obrigatório
@@ -34,4 +34,5 @@ Xhopii - Sistema WEB E-commerce
 - Visualizar Produtos – Obrigatório
 - Visualizar Loja – Obrigatório
 - Visualizar Cupom de desconto - Obrigatório
-- Visualizar um Produto específico (Já implementada em atividades anteriores)
+- Visualizar um Produto específico **implementada em atividades anteriores**
+> Tem HTML Semântico, CSS e FlexBox
