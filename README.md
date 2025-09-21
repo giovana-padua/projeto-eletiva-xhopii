@@ -18,21 +18,47 @@ Xhopii - Sistema WEB E-commerce
 
 ### Interfaces (Front-End):
 
+_Possuem design_
 - Login - Obrigatório - **Gi**
 > Usei HTML Semântico, CSS, FlexBox e Grid Layout | Falta o redirecionamento do botão "Entre"
+
 - Redefinição de Senha - **Gi**
 > Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
+
 - Home - Obrigatório - **Ana**
+> 
+
 - Cadastrar Cliente - **Gi**
-> Usei HTML Semântico, CSS, FlexBox e Grid Layout
+>  Usei HTML Semântico, CSS, FlexBox e Grid Layout
+
 - Cadastrar Funcionário - Obrigatório
+> 
+
 - Cadastrar Produto – Obrigatório
-- Cadastrar Cupom de desconto - Obrigatório
-- Cadastrar Loja - Obrigatório
-- Visualizar Clientes - Obrigatório
-- Visualizar Funcionários - Obrigatório
+> 
+
 - Visualizar Produtos – Obrigatório
-- Visualizar Loja – Obrigatório
-- Visualizar Cupom de desconto - Obrigatório
+> 
+
 - Visualizar um Produto específico **implementada em atividades anteriores**
-> Tem HTML Semântico, CSS e FlexBox
+> Tem HTML Semântico, CSS e FlexBox | JS para mudar o tamanho, a foto principal e colocar borda nas opções selecionadas
+
+
+_Criatividade Liberada_
+- Cadastrar Cupom de desconto - Obrigatório
+> 
+
+- Cadastrar Loja - Obrigatório
+> 
+
+- Visualizar Clientes - Obrigatório
+> 
+
+- Visualizar Funcionários - Obrigatório
+> 
+
+- Visualizar Loja – Obrigatório
+> 
+
+- Visualizar Cupom de desconto - Obrigatório
+> 
