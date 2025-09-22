@@ -26,7 +26,7 @@ _Possuem design_
 > Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
 
 - Home - Obrigatório - **Ana**
-> 
+> Usei HTML Semântico, CSS, FlexBox, Grid Layout e Bootstrap para o Carrossel | Falta linkar as páginas de navegação
 
 - Cadastrar Cliente - **Gi**
 >  Usei HTML Semântico, CSS, FlexBox e Grid Layout
