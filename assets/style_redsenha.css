@@ -67,7 +67,7 @@
     background-color: #fff;
 }
 
-.corpo .entrar {
+.corpo .form_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,19 +81,19 @@
     box-shadow: 0px 5px 8px 2px #0000006e;
 }
 
-.corpo .entrar img {
+.corpo .form_container img {
     position: absolute;
     left: 10px;
     top: 10px;
     opacity: .8;
 }
 
-.corpo .entrar img:hover {
+.corpo .form_container img:hover {
     cursor: pointer;
     opacity: 1;
 }
 
-.corpo .entrar h3 {
+.corpo .form_container h3 {
     font-weight: 400;
 }
 
