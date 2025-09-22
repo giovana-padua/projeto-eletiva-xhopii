@@ -62,7 +62,7 @@
 }
 
 .carousel-item img {
-    height: 50%;
+    height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -78,7 +78,7 @@
     box-shadow: 0 4px 20px rgba(251, 86, 48, 0.3);
 }
 
-.section-title {
+.titulo-container {
     text-align: center;
     color: #fb5630;
     font-size: 1.1rem;
@@ -89,7 +89,7 @@
     padding-bottom: 15px;
 }
 
-.section-title::after {
+.titulo-container::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -101,20 +101,20 @@
     background-color: rgba(251, 86, 48, 0.3); 
 }
 
-.products-container {
+.container-produtos {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.products-grid {
+.grid-produtos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin-bottom: 50px;
 }
 
-.product-card {
+.produtos-capa {
     background: white;
     border-radius: 12px;
     padding: 15px;
@@ -123,12 +123,12 @@
     cursor: pointer;
 }
 
-.product-card:hover {
+.produtos-capa:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
-.product-image {
+.produto-imagem {
     width: 100%;
     height: 140px;
     background: #1a1a1a;
@@ -140,28 +140,28 @@
     overflow: hidden;
 }
 
-.product-image img {
+.produto-imagem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.product-title {
+.tipo-produto {
     font-size: 0.85rem;
     color: #666;
     margin-bottom: 8px;
     line-height: 1.3;
 }
 
-.product-price {
+.preco-produto {
     color: #fb5630;
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
-.product-stock {
+.qnt-produto {
     color: #999;
     font-size: 0.8rem;
 }
