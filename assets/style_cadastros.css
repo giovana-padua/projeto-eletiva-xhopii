@@ -142,7 +142,7 @@
 
 .corpo form .foto_perfil {
     display: grid;
-    grid-template-areas: "selecionar selecionar" "botao mensagem";
+    grid-template-areas: "selecionar" "botao";
     align-items: center;
     justify-content: space-between;
     row-gap: 30px;
@@ -151,18 +151,18 @@
 
 .corpo form .foto_perfil h3.selecionar{
     grid-area: selecionar;
+    width: 100%;
     color: #fb5630;
     font-size: 1em;
     font-weight: 600;
     text-align: center;
 }
 
-.corpo form .foto_perfil input#fotoCli,
-.corpo form .foto_perfil input#fotoFun {
-    display: none;
+.corpo form .foto_perfil input[type="file"] {
+    border: none;
 }
 
-.corpo form .foto_perfil label.botao {
+.corpo form .foto_perfil input[type="file"]::file-selector-button {
     grid-area: botao;
     border: 1px #fb5630 solid;
     border-radius: 8px;
@@ -171,14 +171,9 @@
     text-align: center;
 }
 
-.corpo form .foto_perfil label.botao:hover {
+.corpo form .foto_perfil input[type="file"]::file-selector-button:hover {
     background-color: #fb553015;
     cursor: pointer;
-}
-
-.corpo form .foto_perfil p#mensagem {
-    grid-area: mensagem;
-    font-size: .8em;
 }
 
 .corpo form input[type="submit"] {
