@@ -31,6 +31,7 @@
 .cabecalho .logo h1 {
     color: #fff;
     font-size: 42px;
+    font-weight: 600;
 }
 
 .cabecalho a.sair {
@@ -58,7 +59,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 40px;
+    padding: 0;
     background-color: #fb772f;
 }
 
@@ -68,7 +70,9 @@
     justify-content: space-evenly;
     gap: 10px;
 
+    margin: 0; 
     width: 85%;
+    padding: 0;
     list-style: none;
 }
 
@@ -153,7 +157,8 @@
     text-align: center;
 }
 
-.corpo form .foto_perfil input#foto{
+.corpo form .foto_perfil input#fotoCli,
+.corpo form .foto_perfil input#fotoFun {
     display: none;
 }
 

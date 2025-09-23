@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Helvetica,     Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 /* ca b e ç a l h o */
@@ -29,6 +30,7 @@
 .cabecalho .logo h1 {
     color: #fff;
     font-size: 42px;
+    font-weight: 600;
 }
 
 .cabecalho a.sair {
@@ -52,20 +54,23 @@
 
 .nav-paginas {
     display: flex;
-    padding: 0;
     align-items: center;
     justify-content: center;
     height: 40px;
+    padding: 0;
     background-color: rgb(251, 119, 47);
 }
 
 .nav-paginas ul {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    list-style: none;
+    justify-content: space-evenly;
+    gap: 10px;
+
     margin: 0; 
+    width: 85%;
     padding: 0;
+    list-style: none;
 }
 
 .nav-paginas li{

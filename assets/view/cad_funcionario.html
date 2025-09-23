@@ -21,8 +21,8 @@
     <nav class="nav-paginas">
         <ul>
             <a class="pags" href="homepage.html"><li>Home</li></a>
-            <a class="pags" href="cad_cliente.html"><li class="active">Cadastro Cliente</li></a>
-            <a class="pags" href="cad_funcionario.html"><li>Cadastro Funcionário</li></a>
+            <a class="pags" href="cad_cliente.html"><li>Cadastro Cliente</li></a>
+            <a class="pags" href="cad_funcionario.html"><li class="active">Cadastro Funcionário</li></a>
             <a class="pags" href="cad_produto.html"><li>Cadastro Produto</li></a>
             <a class="pags"><li>Ver Clientes</li></a>
             <a class="pags"><li>Ver Funcionários</li></a>
@@ -32,28 +32,32 @@
 
     <section class="corpo">
         <section class="form_container">
-            <h3>Cadastrar Cliente</h3>
+            <h3>Cadastrar Funcionário</h3>
             <form>
-                <input type="text" name="NomeCli" id="nomeCli" placeholder="Nome" required autofocus>
+                <input type="text" name="NomeFun" id="nomeFun" placeholder="Nome" required autofocus>
 
-                <input type="text" name="SobrenomeCli" id="sobrenomeCli" placeholder="Sobrenome" required>
+                <input type="text" name="SobrenomeFun" id="sobrenomeFun" placeholder="Sobrenome" required>
                 
-                <input type="number" name="CPFCli" id="cpfCli" placeholder="CPF" required>
+                <input type="number" name="CPFFun" id="cpfFun" placeholder="CPF" required>
 
-                <input type="date" name="DataNascimentoCli" id="data_nascimentoCli" placeholder="Data de Nascimento" required>
+                <input type="date" name="DataNascimentoFun" id="data_nascimentoFun" placeholder="Data de Nascimento" required>
                 
-                <input type="tel" name="TelefoneCli" id="telefoneCli" placeholder="Telefone" required>
+                <input type="tel" name="TelefoneFun" id="telefoneFun" placeholder="Telefone" required>
 
-                <input type="email" name="EmailCli" id="emailCli" placeholder="Email" required>
+                <input type="text" name="CargoFun" id="cargoFun" placeholder="Cargo / Função" required>
+
+                <input type="text" name="SalarioFun" id="salarioFun" placeholder="Salário" required>
+
+                <input type="email" name="EmailFun" id="emailFun" placeholder="Email" required>
                 
-                <input type="password" name="SenhaCli" id="senhaCli" placeholder="Senha" required>
+                <input type="password" name="SenhaFun" id="senhaFun" placeholder="Senha" required>
                 
                 <section class="foto_perfil">
                     <h3 class="selecionar">Selecionar foto de perfil:</h3>
 
-                    <input type="file" name="FotoCli" id="fotoCli" placeholder="Foto" required
+                    <input type="file" name="FotoFun" id="fotoFun" placeholder="Foto" required
                     accept=".png, .jpeg">
-                    <label for="fotoCli" class="botao">Escolher arquivo</label>
+                    <label for="fotoFun" class="botao">Escolher arquivo</label>
 
                     <p id="mensagem">Nenhum arquivo escolhido</p> <!-- Vai precisar de js para mudar o texto -->
                 </section>
