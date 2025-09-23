@@ -333,7 +333,7 @@ h4.titulo_secao_footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     border-top: 1px solid rgb(151, 151, 151);
     padding: 20px;
     color: rgb(39, 39, 39);
@@ -357,6 +357,9 @@ h4.titulo_secao_footer {
     .titulo-container {
         font-size: 1.3rem;
         padding-top: 25px;
+    }
+    .rodape {
+        max-width: 90%;
     }
 }
 
@@ -392,10 +395,6 @@ h4.titulo_secao_footer {
     .produto-imagem {
         height: 160px;
     }
-
-    .rodape {
-        width: 100%;
-    }
     
     .infos {
         grid-template-columns: repeat(2, 1fr);
@@ -414,7 +413,7 @@ h4.titulo_secao_footer {
     .siga article {
         gap: 6px;
     }
-    
+
     .pagamento .imgs-grid {
         grid-template-columns: repeat(2, 1fr);
         max-width: 120px;

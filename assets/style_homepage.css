@@ -139,6 +139,17 @@
     padding: 0 20px;
 }
 
+.produto-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.produto-link:hover {
+    text-decoration: none;
+}
+
 .grid-produtos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
