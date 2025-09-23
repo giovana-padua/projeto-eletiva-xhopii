@@ -37,8 +37,8 @@ _Possuem design_
 - Cadastrar Produto – Obrigatório
 > 
 
-- Visualizar Produtos – Obrigatório
-> 
+- Visualizar Produtos – Obrigatório - **Ana**
+> Usei HTML Semântico, CSS, FlexBox e Grid Layout
 
 - Visualizar um Produto específico **implementada em atividades anteriores**
 > Tem HTML Semântico, CSS e FlexBox | JS para mudar o tamanho, a foto principal e colocar borda nas opções selecionadas
