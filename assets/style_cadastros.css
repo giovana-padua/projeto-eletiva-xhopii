@@ -178,7 +178,7 @@
 
 .corpo form .foto_perfil p#mensagem {
     grid-area: mensagem;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .corpo form input[type="submit"] {
