@@ -68,7 +68,7 @@ function selecionarCor(imgEscolhida) {
     }
 }
 
-function mudarDisponivel (botaoEscolhido){
+function mudarTamanho (botaoEscolhido){
     if (botaoEscolhido.id == "btnTamanhoP"){
         document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: P";
     }
