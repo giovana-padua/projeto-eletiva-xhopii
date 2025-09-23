@@ -109,6 +109,14 @@
     justify-content: center;
 }
 
+.produto_carrossel .cores :hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(251, 86, 48, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+    border-color: rgb(251, 86, 48);
+}
+
 .produto .produto_carrossel .cores{
     display: flex;
     flex-direction: column;
