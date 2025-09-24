@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+/* ca b e ç a l h o */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 20px;
+    background-color: rgb(251, 86, 48);
+}
+
+.cabecalho .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.cabecalho .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho .logo h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.cabecalho a.sair {
+    text-decoration: none;
+}
+
+.cabecalho a.sair button#sair {
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.cabecalho a.sair button#sair:hover {
+    background-color: rgb(251, 119, 47);
+    cursor: pointer;
+}
+
+/*b a r r a  d e  n a v e g a ç ã o*/
+
+.nav-paginas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0;
+    background-color: rgb(251, 119, 47);
+}
+
+.nav-paginas ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 0; 
+    width: 85%;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-paginas li{
+    color: rgb(255, 255, 255);
+}
+
+.nav-paginas ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-paginas ul li a:hover {
+    color: rgb(184, 184, 184);
+    text-decoration: underline;
+}
+
+/*c a r r o s s e l */
+.Carrossel {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*p r o m o ç õ e s*/
+
+.banner-promo {
+    margin: 20px auto;
+    max-width: 950px;
+    padding: 0 20px;
+}
+
+.banner-promo img {
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(251, 86, 48, 0.3);
+}
+
+/*c o n t e u  d o*/
+
+.titulo-container {
+    text-align: center;
+    color: rgb(251, 86, 48);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 20px;
+}
+
+.grid-cupom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 700px; 
+    width: 100%;      
+    margin: 30px auto;
+    padding: 10px;
+    place-items: center;
+}
+
+.cupom-capa {
+    width: 300px;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    background: rgb(250, 250, 250);
+    text-align: center;
+    justify-content: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    border:dashed 2px rgb(170, 170, 170);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.cabecalho-cupom {
+    display: flex;
+    justify-content:space-between;
+}
+
+.cupom-imagem {
+    margin-left: -50px;
+    margin-top: -10px;
+}
+
+.cupom-imagem img {
+    width: 100px;
+    border-radius: 50%;    
+}
+
+.tipo-cupom {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+.cupom-info{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.desconto-cupom {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+.limite-cupom{
+    margin-left: -110px;
+    margin-top: 5px;
+}
+
+.linha-divisao {
+    width: 255px;
+    height: 2px;
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgb(170, 170, 170) 0px,
+        rgb(170, 170, 170) 8px,
+        transparent 8px,
+        transparent 16px
+    );
+    margin-top: 20px;
+    margin-left: -55px;
+    position:relative;
+}
+
+.circulo1, .circulo2 {
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+}
+
+.circulo1 {
+    left: -25px;
+    border-right: dashed 2px rgb(170, 170, 170);
+    
+}
+
+.circulo2 {
+    right: -25px;
+    border-left: dashed 2px rgb(170, 170, 170);
+}
+
+.rodape-info {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px;    
+}
+
+.validade{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-left: -50px;
+}
+
+.disponivel {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+.botao-resgatar {
+    padding: 5px;
+    border-radius: 10%;
+    margin-top: 5px;
+    margin-right: -110%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 119, 47);
+    transition: transform 0.3s ease;
+}
+
+.botao-resgatar:hover {
+    text-decoration: none;
+}
+
+/*r o d a p é*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+    text-align: justify;
+}
+
+.infos section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+}
+
+h4.titulo_secao_footer {
+    color: rgb(39, 39, 39);
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.infos section p {
+    color: rgb(151, 151, 151);
+    font-size: .8em;
+}
+
+.pagamento section.imgs-grid {
+    display: grid;
+    grid-template-rows: 20px 20px 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.siga article {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.siga img {
+    width: 20px;
+}
+
+.direitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-top: 1px rgb(151, 151, 151) solid;
+    padding: 10px;
+    color: rgb(39, 39, 39);
+    text-align: center;
+}

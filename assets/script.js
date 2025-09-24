@@ -82,3 +82,10 @@ function mudarTamanho (botaoEscolhido){
         document.getElementById('tamanhoSelecionado').innerHTML = "Tamanho Selecionado: GG";
     }
 }
+
+function usarCupom(button) {
+            button.textContent = 'Resgatado';
+            button.disabled = true;
+            button.style.backgroundColor = 'rgb(210, 210, 210)';
+            button.style.cursor = 'not-allowed';
+        }
