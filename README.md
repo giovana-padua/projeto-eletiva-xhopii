@@ -25,7 +25,7 @@ _Possuem design_
 - Redefinição de Senha - **Gi**
 > Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
 
-- Home - Obrigatório - **Ana**
+- Home - **Ana**
 > Usei HTML Semântico, CSS, FlexBox, Grid Layout e Bootstrap para o Carrossel | Falta linkar as páginas de navegação
 
 - Cadastrar Cliente - **Gi**
@@ -37,7 +37,7 @@ _Possuem design_
 - Cadastrar Produto – **Gi**
 > Usei HTML Semântico, CSS, FlexBox e Grid Layout
 
-- Visualizar Produtos – Obrigatório - **Ana**
+- Visualizar Produtos – **Ana**
 > Usei HTML Semântico, CSS, FlexBox e Grid Layout
 
 - Visualizar um Produto específico **implementada em atividades anteriores**
@@ -45,20 +45,29 @@ _Possuem design_
 
 
 _Criatividade Liberada_
-- Cadastrar Cupom de desconto - Obrigatório
+- Cadastrar Cupom de desconto - **Gi**
 > 
 
 - Cadastrar Loja - Obrigatório
 > 
 
-- Visualizar Clientes - Obrigatório
+- Visualizar Clientes - **Ana**
+>
+
+- Visualizar Cliente (individual) - Opcional
 > 
 
-- Visualizar Funcionários - Obrigatório
+- Visualizar Funcionários - **Ana**
 > 
 
-- Visualizar Loja – Obrigatório
+- Visualizar Funcionário (individual) - Opcional
 > 
 
-- Visualizar Cupom de desconto - Obrigatório
+- Visualizar Loja – Obrigatório **Ana**
 > 
+
+- Visualizar Loja (individual) - Opcional
+> 
+
+- Visualizar Cupom de desconto - **Ana**
+> Usei HTML Semântico, CSS, FlexBox, Grid Layout, Bootstrap para o Carrossel e JS para interação com o cupom | Falta linkar as páginas de navegação
