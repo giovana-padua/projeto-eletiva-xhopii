@@ -98,138 +98,8 @@ html, body {
     cursor: pointer;
 }
 
-/*c o r p o   p r i n c i p a l*/
-.titulo-container {
-    text-align: center;
-    color: rgb(251, 86, 48);
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-    position: relative;
-    padding-top: 20px;
-}
+/*c o n t e ú d o*/
 
-.titulo-container::after {
-    content: '';
-    position: absolute;
-    margin-top: 30px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 5px; 
-    border-radius: 3px;
-    background-color: rgba(251, 86, 48, 0.3); 
-}
-
-.container-clientes {
-    max-width: 1400px;
-    margin: 0 auto;
-    min-height: 700px;
-    padding: 0 20px 40px 20px;
-    background-color: rgb(250, 250, 250);
-    box-sizing: border-box;
-}
-
-
-.grid-clientes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 30px 0 50px 0;
-    padding: 0 10px;
-    width: 100%;
-}
-
-.cliente-capa {
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-}
-
-.cliente-capa:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 30px rgba(251, 86, 48, 0.15);
-    border-color: rgb(251, 86, 48);
-}
-
-.foto-cliente img {
-    width: 100px;
-    height: 100x;
-    border: rgb(251, 119, 47) solid;
-    object-fit: contain;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.cabecalho-cliente {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.infos-cliente {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.nome-cliente {
-    margin-left: 20px;
-    color: rgb(51, 51, 51);
-    justify-content: center;
-    line-height: 1.5;
-    font-weight: bold;
-}
-
-.cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado {
-    display: flex;
-    justify-content:space-between;
-    margin-top: auto;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: rgb(100, 100, 100);
-}
-
-.cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno {
-    font-weight: 600;
-    margin-left: 7px;
-}
-
-.cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno {
-    font-weight: 400;
-    margin-left: 7px;
-}
-
-.ver-perfil {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 10px;
-}
-
-.perfil-cliente {
-    color: rgb(251, 86, 48);
-    font-weight: 400px;
-    font-size: 1rem;
-    margin: 0;
-}
-
-.perfil-cliente:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(251, 119, 47);
-    border-radius: 8px;
-    padding: 5px;
-    cursor: pointer;
-}
 
 /*r o d a p é*/
 
@@ -339,20 +209,6 @@ h4.titulo_secao_footer {
 /*R e s p o n s i v i d a d e*/
 
 @media only screen and (max-width: 1200px) {
-    .container-clientes {
-        padding: 0 15px 30px 15px;
-    }
-    
-    .grid-clientes {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin: 20px 0 40px 0;
-    }
-    
-    .titulo-container {
-        font-size: 1.3rem;
-        padding-top: 25px;
-    }
     .rodape {
         max-width: 90%;
     }
@@ -371,37 +227,6 @@ h4.titulo_secao_footer {
     .nav-paginas ul {
         gap: 20px;
         padding: 8px 15px;
-    }
-    
-    .grid-clientes {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-
-    .cabecalho-cliente {
-        align-items: center;
-    }
-
-    .nome-cliente {
-        margin-left: 100px;
-        
-    }
-
-    .infos-cliente {
-        margin-top: 50px;
-    }
-    .cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado, .perfil-cliente  {
-        font-size: 0.85rem;    
-    }
-
-    .cliente-capa {
-        min-height: 400px;
-        padding: 15px;
-    }
-    
-    .foto-cliente {
-        height: 60px;
-        width: 60px;
     }
     
     .infos {
@@ -458,43 +283,7 @@ h4.titulo_secao_footer {
         padding: 5px;
         font-size: 0.9rem;
         overflow-x: auto;
-    }
-    
-    .titulo-container {
-        font-size: 1.2rem;
-        padding-top: 20px;
-    }
-    
-    .container-clientes {
-        padding: 0 10px 25px 10px;
-    }
-    
-    .cliente-capa {
-        min-height: 350px;
-        padding: 12px;
-    }
-    
-    .cabecalho-cliente {
-        flex-direction: column;
-        align-items: center;
-        margin-left: -40px;
-    }
-
-    .foto-cliente img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .nome-cliente {
-        font-size: 1rem;
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: -100px;
-        height: 80px;
-    }
-    
-    .perfil-cliente {
-        font-size: 1.1rem;
+        -webkit-overflow-scrolling: touch;
     }
     
     .infos {
@@ -549,51 +338,6 @@ h4.titulo_secao_footer {
     
     .nav-paginas ul li a {
         padding: 3px 6px;
-    }
-    
-    .titulo-container {
-        font-size: 1.1rem;
-        padding-top: 15px;
-    }
-    
-    .container-clientes {
-        padding: 0 8px 20px 8px;
-    }
-    
-    .grid-clientes {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        margin: 12px 0 25px 0;
-        padding: 0;
-    }
-    
-    .cliente-capa {
-        min-height: 320px;
-        padding: 10px;
-    }
-    
-    .foto-cliente {
-        height: 20px;
-        width: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .nome-cliente {
-        font-size: 0.9rem;
-        min-height: 35px;
-        margin-bottom: 8px;
-    }
-    
-    .cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno {
-        font-size: 0.75rem;
-    }
-    
-    .cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno {
-        font-size: 0.8rem;
-    }
-    
-    .perfil-cliente {
-        font-size: 1rem;
     }
     
     .infos {
