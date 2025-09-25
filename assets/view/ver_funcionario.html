@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xhopii</title>
 
-    <link rel="stylesheet" href="../style_cadastros.css">
-    <script type="text/javascript" src="../script_cadcliente.js"></script>
+    <link rel="stylesheet" href="../style_visual_cads.css">
 
 </head>
 <body>
@@ -22,7 +21,7 @@
     <nav class="nav-paginas">
         <ul>
             <a class="pags" href="homepage.html"><li>Home</li></a>
-            <a class="pags" href="cad_cliente.html"><li class="active">Cadastro Cliente</li></a>
+            <a class="pags" href="cad_cliente.html"><li>Cadastro Cliente</li></a>
             <a class="pags" href="cad_funcionario.html"><li>Cadastro Funcionário</li></a>
             <a class="pags" href="cad_produto.html"><li>Cadastro Produto</li></a>
             <a class="pags" href="ver_cliente.html"><li>Ver Clientes</li></a>
@@ -32,32 +31,85 @@
     </nav>
 
     <section class="corpo">
-        <section class="form_container">
-            <h3>Cadastrar Cliente</h3>
-            <form>
-                <input type="text" name="NomeCli" id="nomeCli" placeholder="Nome" required autofocus>
+        <h3>Funcionários Cadastrados</h3>
+        <section class="visu_container">
+            <section class="infos_cadastradas">
 
-                <input type="text" name="SobrenomeCli" id="sobrenomeCli" placeholder="Sobrenome" required>
-                
-                <input type="number" name="CPFCli" id="cpfCli" placeholder="CPF" required>
-
-                <input type="date" name="DataNascimentoCli" id="data_nascimentoCli" placeholder="Data de Nascimento" required>
-                
-                <input type="tel" name="TelefoneCli" id="telefoneCli" placeholder="Telefone" required>
-
-                <input type="email" name="EmailCli" id="emailCli" placeholder="Email" required>
-                
-                <input type="password" name="SenhaCli" id="senhaCli" placeholder="Senha" required>
-                
-                <section class="foto_perfil">
-                    <h3 class="selecionar">Selecionar foto de perfil:</h3>
-
-                    <input type="file" name="FotoCli" id="fotoCli" placeholder="Foto" required
-                    accept=".png, .jpeg">
+                <section class="foto">
+                    <img>
                 </section>
+    
+                <section class="dados">
+                    <section class="nome_cadastrado">
+                        <h4 id="nomeFunc">Nome</h4>
+                        <h4 id="sobrenomeFunc">Sobrenome</h4>
+                    </section>
+                    
+                    <section class="cpf_cadastrado">
+                        <h4>CPF:</h4>
+                        <p>Seu CPF</p>
+                    </section>
 
-                <input type="submit" value="Cadastrar">
-            </form>
+                    <section class="nascimento_cadastrado">
+                        <h4>Data de nascimento:</h4>
+                        <p id="nascimentoFunc">Sua Data de nascimento</p>
+                    </section>
+                    
+                    <section class="telefone_cadastrado">
+                        <h4>Telefone:</h4>
+                        <p id="telefoneFunc">Seu Telefone</p>
+                    </section>
+                    
+                    <section class="funcao_cadastrado">
+                        <h4>Função:</h4>
+                        <p id="funcaoFunc">Sua Função</p>
+                    </section>
+                    
+                    <section class="salario_cadastrado">
+                        <h4>Salário:</h4>
+                        <p id="salarioFunc">Seu Salário</p>
+                    </section>
+
+                    <section class="email_cadastrado">
+                        <h4>Email:</h4>
+                        <p id="emailFunc">Seu Email</p>
+                    </section>                    
+                </section>
+            </section>
+        </section>
+        <section class="visu_container">
+            <section class="infos_cadastradas">
+                <section class="foto">
+                    <img>
+                </section>
+    
+                <section class="dados">
+                    <section class="nome_cadastrado">
+                        <h4 id="nomeFunc">Nome</h4>
+                        <h4 id="sobrenomeFunc">Sobrenome</h4>
+                    </section>
+                    
+                    <section class="cpf_cadastrado">
+                        <h4>CPF:</h4>
+                        <p>Seu CPF</p>
+                    </section>
+
+                    <section class="nascimento_cadastrado">
+                        <h4>Data de nascimento:</h4>
+                        <p id="nascimentoFunc">Sua Data de nascimento</p>
+                    </section>
+                    
+                    <section class="telefone_cadastrado">
+                        <h4>Telefone:</h4>
+                        <p id="telefoneFunc">Seu Telefone</p>
+                    </section>
+
+                    <section class="email_cadastrado">
+                        <h4>Email:</h4>
+                        <p id="emailFunc">Seu Email</p>
+                    </section>                    
+                </section>
+            </section>
         </section>
     </section>
 
