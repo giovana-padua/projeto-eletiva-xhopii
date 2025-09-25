@@ -1,9 +1,9 @@
 * {
     margin: 0;
-    font-family: Helvetica,     Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-/* ca b e ç a l h o */
+/* c a b e ç a l h o */
 
 .cabecalho {
     display: flex;
@@ -12,7 +12,7 @@
     justify-content: space-between;
     height: 80px;
     padding: 0px 20px;
-    background-color: rgb(251, 86, 48);
+    background-color: #fb5630;
 }
 
 .cabecalho .logo {
@@ -28,8 +28,9 @@
 }
 
 .cabecalho .logo h1 {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 42px;
+    font-weight: 600;
 }
 
 .cabecalho a.sair {
@@ -40,53 +41,68 @@
     border: none;
     border-radius: 8px;
     padding: 5px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 1em;
     font-weight: 500;
     background-color: transparent;
 }
 
 .cabecalho a.sair button#sair:hover {
-    background-color: rgb(251, 119, 47);
+    background-color: #fb772f;
     cursor: pointer;
 }
 
-/*b a r r a  d e  n a v e g a ç ã o*/
+/* m e n u */
 
 .nav-paginas {
     display: flex;
-    padding: 0;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    background-color: rgb(251, 119, 47);
+    height: 45px;
+    padding: 0;
+    background-color: #fb772f;
 }
 
 .nav-paginas ul {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
     margin: 0; 
+    width: 85%;
     padding: 0;
+    list-style: none;
 }
 
-.nav-paginas li{
-    color: rgb(255, 255, 255);
-}
-
-.nav-paginas ul li a {
-    color: rgb(255, 255, 255);
+.nav-paginas a.pags {
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
+    text-align: center;
 }
 
-.nav-paginas ul li a:hover {
-    color: rgb(218, 218, 218);
-    text-decoration: underline;
+.nav-paginas a.pags li {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.nav-paginas a.pags li:hover {
+    background-color: #ef4d28;
+    cursor: pointer;
 }
 
 /*c o r p o   p r i n c i p a l*/
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+.container-clientes {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 700px;
+    padding: 0 20px 40px 20px;
+    background-color: rgb(250, 250, 250);
+}
 
 .titulo-container {
     text-align: center;
@@ -96,38 +112,30 @@
     margin: 0;
     text-transform: uppercase;
     position: relative;
-    
     padding-top: 20px;
 }
 
-.container-produtos {
-    max-width: 1400px;
-    margin: 0 auto;
-    min-height: 700px;
-    padding: 0 20px 40px 20px;
-    background-color: rgb(250, 250, 250);
+.titulo-container::after {
+    content: '';
+    position: absolute;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5px; 
+    border-radius: 3px;
+    background-color: rgba(251, 86, 48, 0.3); 
 }
 
-.grid-produtos {
+.grid-clientes {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin: 30px 0 50px 0;
     padding: 0 10px;
 }
 
-.produto-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.produto-link:hover {
-    text-decoration: none;
-}
-
-.produtos-capa {
+.cliente-capa {
     background: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 20px;
@@ -140,80 +148,59 @@
     flex-direction: column;
 }
 
-.produtos-capa:hover {
+.cliente-capa:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 30px rgba(251, 86, 48, 0.15);
     border-color: rgb(251, 86, 48);
 }
 
-.produto-imagem {
-    width: 100%;
-    height: 180px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.produto-imagem img {
-    width: 100%;
-    height: 100%;
+.foto-cliente img {
+    width: 100px;
+    height: 100px;
+    border: rgb(251, 119, 47) solid;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-.produtos-capa:hover .produto-imagem img {
-    transform: scale(1.05);
+.cabecalho-cliente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.produto-info {
+.infos-cliente {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.tipo-produto {
-    font-size: 1rem;
+.nome-cliente {
+    margin-left: 20px;
     color: rgb(51, 51, 51);
-    margin-bottom: 12px;
-    line-height: 1.3;
-    font-weight: 400;
-    min-height: 40px;
+    justify-content: center;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
-.fabricante, .descricao {
+.cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado {
     display: flex;
     justify-content:space-between;
     margin-top: auto;
-    font-size: 1rem;
-    line-height: 1.3;
-    color: rgb(102, 102, 102);
+    line-height: 1.5;
+    color: rgb(100, 100, 100);
 }
 
-.fabricante .titulo-grid-interno, .descricao .titulo-grid-interno {
-    font-weight: 400;
-    color: rgb(102, 102, 102);
-    margin-bottom: 2px;
+.cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno {
+    font-weight: 600;
 }
 
-.fabricante .texto-grid-interno {
-    color: rgb(153, 153, 153);
-    font-weight: 400;
+.cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno {
+    font-weight: 4o0;
     margin-left: 7px;
 }
 
-.descricao .texto-grid-interno {
-    color: rgb(153, 153, 153);
-    font-weight: 400;
-    margin-bottom: 2px;
-    margin-left: 7px;
-}
-
-.preco-qnt {
+.ver-perfil {
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -221,18 +208,19 @@
     padding-top: 10px;
 }
 
-.preco-produto {
+.perfil-cliente {
     color: rgb(251, 86, 48);
     font-weight: 400px;
     font-size: 1rem;
     margin: 0;
 }
 
-.qnt-produto {
-    color: rgb(153, 153, 153);
-    font-size: 1rem;
-    margin: 0;
-    font-weight: 400;
+.perfil-cliente:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 119, 47);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 /*r o d a p é*/
