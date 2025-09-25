@@ -24,15 +24,15 @@
             <a class="pags" href="cad_cliente.html"><li>Cadastro Cliente</li></a>
             <a class="pags" href="cad_funcionario.html"><li>Cadastro Funcionário</li></a>
             <a class="pags" href="cad_produto.html"><li class="active">Cadastro Produto</li></a>
-            <a class="pags"><li>Ver Clientes</li></a>
-            <a class="pags"><li>Ver Funcionários</li></a>
+            <a class="pags" href="ver_cliente.html"><li>Ver Clientes</li></a>
+            <a class="pags" href="ver_funcionario.html"><li>Ver Funcionários</li></a>
             <a class="pags" href="ver_produto.html"><li>Ver Produtos</li></a>
         </ul>
     </nav>
 
     <section class="corpo">
         <section class="form_container">
-            <h3>Cadastrar Funcionário</h3>
+            <h3>Cadastrar Produto</h3>
             <form>
                 <input type="text" name="NomeFun" id="nomeFun" placeholder="Nome" required autofocus>
 
@@ -45,15 +45,11 @@
                 <input type="number" name="Quantidade" id="quantidade" placeholder="Quantidade" required>                
                 
                 <section class="foto_perfil">
-                    <h3 class="selecionar">Selecionar foto de perfil:</h3>
+                    <h3 class="selecionar">Selecionar a foto do produto:</h3>
 
                     <input type="file" name="FotoFun" id="fotoFun" placeholder="Foto" required
                     accept=".png, .jpeg">
-                    <label for="fotoFun" class="botao">Escolher arquivo</label>
-
-                    <p id="mensagem">Nenhum arquivo escolhido</p> <!-- Vai precisar de js para mudar o texto -->
                 </section>
-
                 <input type="submit" value="Cadastrar">
             </form>
         </section>
