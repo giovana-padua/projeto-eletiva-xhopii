@@ -171,6 +171,7 @@
 
 .corpo form .foto_perfil h3.selecionar{
     grid-area: selecionar;
+    width: 100%;
     color: #fb5630;
     font-weight: 600;
     text-align: center;
