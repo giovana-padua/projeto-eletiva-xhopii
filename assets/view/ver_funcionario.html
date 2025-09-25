@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xhopii</title>
 
-    <link rel="stylesheet" href="../style_cadastros.css">
+    <link rel="stylesheet" href="../style_visual_cads.css">
 
 </head>
 <body>
@@ -23,7 +23,7 @@
             <a class="pags" href="homepage.html"><li>Home</li></a>
             <a class="pags" href="cad_cliente.html"><li>Cadastro Cliente</li></a>
             <a class="pags" href="cad_funcionario.html"><li>Cadastro Funcionário</li></a>
-            <a class="pags" href="cad_produto.html"><li class="active">Cadastro Produto</li></a>
+            <a class="pags" href="cad_produto.html"><li>Cadastro Produto</li></a>
             <a class="pags" href="ver_cliente.html"><li>Ver Clientes</li></a>
             <a class="pags" href="ver_funcionario.html"><li>Ver Funcionários</li></a>
             <a class="pags" href="ver_produto.html"><li>Ver Produtos</li></a>
@@ -31,27 +31,75 @@
     </nav>
 
     <section class="corpo">
-        <section class="form_container">
-            <h3>Cadastrar Funcionário</h3>
-            <form>
-                <input type="text" name="NomeFun" id="nomeFun" placeholder="Nome" required autofocus>
+        <h3>Funcionários Cadastrados</h3>
+        <section class="visu_container">
+            <section class="infos_cadastradas">
 
-                <input type="text" name="Fabricante" id="fabricante" placeholder="Fabricante" required>
-
-                <input type="text" name="Descrição" id="descricao" placeholder="Descrição" required>
-                
-                <input type="number" name="Valor" id="valor" placeholder="Valor" required>                
-                
-                <input type="number" name="Quantidade" id="quantidade" placeholder="Quantidade" required>                
-                
-                <section class="foto_perfil">
-                    <h3 class="selecionar">Selecionar a foto do produto:</h3>
-
-                    <input type="file" name="FotoFun" id="fotoFun" placeholder="Foto" required
-                    accept=".png, .jpeg">
+                <section class="foto">
+                    <img>
                 </section>
-                <input type="submit" value="Cadastrar">
-            </form>
+    
+                <section class="dados">
+                    <section class="nome_cadastrado">
+                        <h4 id="nomeFunc">Nome</h4>
+                        <h4 id="sobrenomeFunc">Sobrenome</h4>
+                    </section>
+                    
+                    <section class="cpf_cadastrado">
+                        <h4>CPF:</h4>
+                        <p>Seu CPF</p>
+                    </section>
+
+                    <section class="nascimento_cadastrado">
+                        <h4>Data de nascimento:</h4>
+                        <p id="nascimentoFunc">Sua Data de nascimento</p>
+                    </section>
+                    
+                    <section class="telefone_cadastrado">
+                        <h4>Telefone:</h4>
+                        <p id="telefoneFunc">Seu Telefone</p>
+                    </section>
+
+                    <section class="email_cadastrado">
+                        <h4>Email:</h4>
+                        <p id="emailFunc">Seu Email</p>
+                    </section>                    
+                </section>
+            </section>
+        </section>
+        <section class="visu_container">
+            <section class="infos_cadastradas">
+                <section class="foto">
+                    <img>
+                </section>
+    
+                <section class="dados">
+                    <section class="nome_cadastrado">
+                        <h4 id="nomeFunc">Nome</h4>
+                        <h4 id="sobrenomeFunc">Sobrenome</h4>
+                    </section>
+                    
+                    <section class="cpf_cadastrado">
+                        <h4>CPF:</h4>
+                        <p>Seu CPF</p>
+                    </section>
+
+                    <section class="nascimento_cadastrado">
+                        <h4>Data de nascimento:</h4>
+                        <p id="nascimentoFunc">Sua Data de nascimento</p>
+                    </section>
+                    
+                    <section class="telefone_cadastrado">
+                        <h4>Telefone:</h4>
+                        <p id="telefoneFunc">Seu Telefone</p>
+                    </section>
+
+                    <section class="email_cadastrado">
+                        <h4>Email:</h4>
+                        <p id="emailFunc">Seu Email</p>
+                    </section>                    
+                </section>
+            </section>
         </section>
     </section>
 

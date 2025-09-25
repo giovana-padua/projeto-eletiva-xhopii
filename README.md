@@ -20,10 +20,10 @@ Xhopii - Sistema WEB E-commerce
 
 _Possuem design_
 - Login - **Gi**
-> Usei HTML Semântico, CSS, FlexBox e Grid Layout | Falta o redirecionamento do botão "Entre"
+> Usei HTML Semântico, CSS, FlexBox e Grid Layout
 
 - Redefinição de Senha - **Gi**
-> Usei HTML Semântico, CSS e FlexBox | Falta o redirecionamento do botão "Enviar"
+> Usei HTML Semântico, CSS e FlexBox
 
 - Home - **Ana**
 > Usei HTML Semântico, CSS, FlexBox, Grid Layout e Bootstrap para o Carrossel | Falta linkar as páginas de navegação
@@ -41,24 +41,24 @@ _Possuem design_
 > Usei HTML Semântico, CSS, FlexBox e Grid Layout
 
 - Visualizar um Produto específico **implementada em atividades anteriores**
-> Tem HTML Semântico, CSS e FlexBox | JS para mudar o tamanho, a foto principal e colocar borda nas opções selecionadas
+> Tem HTML Semântico, CSS e FlexBox | Colocar borda nas opções selecionadas
 
 
 _Criatividade Liberada_
 - Cadastrar Cupom de desconto - **Gi**
-> 
+> Usei HTML Semântico, CSS e FlexBox
 
 - Cadastrar Loja - Obrigatório
 > 
 
-- Visualizar Clientes - **Ana**
->
+- Visualizar Clientes - **Gi**
+> Usei HTML Semântico, CSS e FlexBox
 
 - Visualizar Cliente (individual) - Opcional
-> 
+>
 
-- Visualizar Funcionários - **Ana**
-> 
+- Visualizar Funcionários - **Gi**
+> Usei HTML Semântico, CSS e FlexBox
 
 - Visualizar Funcionário (individual) - Opcional
 > 
