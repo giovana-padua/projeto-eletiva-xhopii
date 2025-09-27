@@ -48,25 +48,25 @@ _Criatividade Liberada_
 - Cadastrar Cupom de desconto - **Gi**
 > Usei HTML Semântico, CSS e FlexBox
 
-- Cadastrar Loja - Obrigatório
+- Cadastrar Loja - Obrigatório **Ana**
 > 
 
-- Visualizar Clientes - **Gi**
+- Visualizar Clientes - **Gi / Ana**
 > Usei HTML Semântico, CSS e FlexBox
 
-- Visualizar Cliente (individual) - Opcional
->
+- Visualizar Cliente (individual) - Opcional **Adiado**
+> 
 
-- Visualizar Funcionários - **Gi**
+- Visualizar Funcionários - **Gi / Ana**
 > Usei HTML Semântico, CSS e FlexBox
 
-- Visualizar Funcionário (individual) - Opcional
+- Visualizar Funcionário (individual) - Opcional **Adiado**
 > 
 
 - Visualizar Loja – Obrigatório **Ana**
 > 
 
-- Visualizar Loja (individual) - Opcional
+- Visualizar Loja (individual) - Opcional **Adiado**
 > 
 
 - Visualizar Cupom de desconto - **Ana**
