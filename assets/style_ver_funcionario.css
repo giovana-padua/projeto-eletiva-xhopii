@@ -2,6 +2,15 @@
 
 /*c o n t e u d o*/
 
+.container-funcionarios {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 700px;
+    padding: 0 20px 40px 20px;
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+}
+
 .titulo-container {
     text-align: center;
     color: rgb(251, 86, 48);
@@ -25,17 +34,7 @@
     background-color: rgba(251, 86, 48, 0.3); 
 }
 
-.container-clientes {
-    max-width: 1400px;
-    margin: 0 auto;
-    min-height: 700px;
-    padding: 0 20px 40px 20px;
-    background-color: rgb(250, 250, 250);
-    box-sizing: border-box;
-}
-
-
-.grid-clientes {
+.grid-funcionario {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -44,7 +43,7 @@
     width: 100%;
 }
 
-.cliente-capa {
+.funcionario-capa {
     background: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 20px;
@@ -57,13 +56,19 @@
     flex-direction: column;
 }
 
-.cliente-capa:hover {
+.funcionario-capa:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 30px rgba(251, 86, 48, 0.15);
     border-color: rgb(251, 86, 48);
 }
 
-.foto-cliente img {
+.cabecalho-funcionario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foto-funcionario img {
     width: 100px;
     height: 100x;
     border: rgb(251, 119, 47) solid;
@@ -72,19 +77,7 @@
     transition: transform 0.3s ease;
 }
 
-.cabecalho-cliente {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.infos-cliente {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.nome-cliente {
+.nome-funcionario {
     margin-left: 20px;
     color: rgb(51, 51, 51);
     justify-content: center;
@@ -92,7 +85,13 @@
     font-weight: bold;
 }
 
-.cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado {
+.infos-funcionario {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado, .funcao-cadastrado, .salario-cadastrado {
     display: flex;
     justify-content:space-between;
     margin-top: auto;
@@ -101,12 +100,12 @@
     color: rgb(100, 100, 100);
 }
 
-.cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno {
+.cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno, .funcao-cadastrado .titulo-grid-interno, .salario-cadastrado .titulo-grid-interno {
     font-weight: 600;
     margin-left: 7px;
 }
 
-.cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno {
+.cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno, .funcao-cadastrado .texto-grid-interno, .salario-cadastrado .texto-grid-interno {
     font-weight: 400;
     margin-left: 7px;
 }
@@ -123,14 +122,14 @@
     text-decoration: none;
 }
 
-.perfil-cliente {
+.perfil-funcionario {
     color: rgb(251, 86, 48);
     font-weight: 400px;
     font-size: 1rem;
     margin: 0;
 }
 
-.perfil-cliente:hover {
+.perfil-funcionario:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(251, 119, 47);
     border-radius: 8px;
@@ -138,14 +137,30 @@
     cursor: pointer;
 }
 
+.central-funcionario {
+    color: rgb(100, 100, 100);
+    font-weight: 400px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.central-funcionario:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 119, 47);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
 /*R e s p o n s i v i d a d e*/
 
 @media only screen and (max-width: 1200px) {
-    .container-clientes {
+    .container-funcionarios {
         padding: 0 15px 30px 15px;
     }
     
-    .grid-clientes {
+    .grid-funcionario {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin: 20px 0 40px 0;
@@ -158,34 +173,34 @@
 }
 
 @media only screen and (max-width: 900px) {    
-    .grid-clientes {
+    .grid-funcionario {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
     }
 
-    .cabecalho-cliente {
+    .cabecalho-funcionario {
         align-items: center;
     }
 
-    .nome-cliente {
+    .nome-funcionario {
         margin-left: 100px;
         
     }
 
-    .infos-cliente {
+    .infos-funcionario {
         margin-top: 50px;
     }
 
-    .cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado, .perfil-cliente  {
+    .cpf-cadastrado, .nascimento-cadastrado, .telefone-cadastrado, .email-cadastrado, .funcao-cadastrado, .salario-cadastrado {
         font-size: 0.85rem;    
     }
 
-    .cliente-capa {
+    .funcionario-capa {
         min-height: 400px;
         padding: 15px;
     }
     
-    .foto-cliente {
+    .foto-funcionario {
         height: 60px;
         width: 60px;
     }
@@ -197,27 +212,27 @@
         padding-top: 20px;
     }
     
-    .container-clientes {
+    .container-funcionarios {
         padding: 0 10px 25px 10px;
     }
     
-    .cliente-capa {
+    .funcionario-capa {
         min-height: 350px;
         padding: 12px;
     }
     
-    .cabecalho-cliente {
+    .cabecalho-funcionario {
         flex-direction: column;
         align-items: center;
         margin-left: -40px;
     }
 
-    .foto-cliente img {
+    .foto-funcionario img {
         width: 80px;
         height: 80px;
     }
 
-    .nome-cliente {
+    .nome-funcionario {
         font-size: 1rem;
         margin-left: 20px;
         margin-top: 30px;
@@ -225,7 +240,7 @@
         height: 80px;
     }
     
-    .perfil-cliente {
+    .perfil-funcionario {
         font-size: 1.1rem;
     }
 }
@@ -236,43 +251,43 @@
         padding-top: 15px;
     }
     
-    .container-clientes {
+    .container-funcionarios {
         padding: 0 8px 20px 8px;
     }
     
-    .grid-clientes {
+    .grid-funcionario {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
         margin: 12px 0 25px 0;
         padding: 0;
     }
     
-    .cliente-capa {
+    .funcionario-capa {
         min-height: 320px;
         padding: 10px;
     }
     
-    .foto-cliente {
+    .foto-funcionario {
         height: 20px;
         width: 20px;
         margin-bottom: 10px;
     }
     
-    .nome-cliente {
+    .nome-funcionario {
         font-size: 0.9rem;
         min-height: 35px;
         margin-bottom: 8px;
     }
     
-    .cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno {
+    .cpf-cadastrado .titulo-grid-interno, .nascimento-cadastrado .titulo-grid-interno, .telefone-cadastrado .titulo-grid-interno, .email-cadastrado .titulo-grid-interno, .funcao-cadastrado .titulo-grid-interno, .salario-cadastrado .titulo-grid-interno {
         font-size: 0.75rem;
     }
     
-    .cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno {
+    .cpf-cadastrado .texto-grid-interno, .nascimento-cadastrado .texto-grid-interno, .telefone-cadastrado .texto-grid-interno, .email-cadastrado .texto-grid-interno, .funcao-cadastrado .texto-grid-interno, .salario-cadastrado .texto-grid-interno {
         font-size: 0.8rem;
     }
     
-    .perfil-cliente {
+    .perfil-funcionario {
         font-size: 1rem;
     }
 }
