@@ -189,13 +189,13 @@
 }
 
 /*R e s p o n s i v i d a d e*/
-/*
+
 @media only screen and (max-width: 1200px) {
-    .container-produtos {
+    .container-lojas {
         padding: 0 15px 30px 15px;
     }
     
-    .grid-produtos {
+    .grid-lojas {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
         margin: 20px 0 40px 0;
@@ -208,22 +208,27 @@
 }
 
 @media only screen and (max-width: 900px) {    
-    .grid-produtos {
+    .grid-loja {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 18px;
     }
 
-    .fabricante, .descricao, .preco-produto, .qnt-produto  {
+    .descricao, .perfil-loja, .contato-loja {
         font-size: 0.85rem;    
     }
 
-    .produtos-capa {
+    .loja-capa {
         min-height: 400px;
         padding: 15px;
     }
     
-    .produto-imagem {
+    .loja-imagem {
         height: 160px;
+    }
+
+    .produto-imagem {
+        height: 60px;
+        margin-bottom: 10px;
     }
 }
 
@@ -233,32 +238,37 @@
         padding-top: 20px;
     }
     
-    .container-produtos {
+    .container-lojas {
         padding: 0 10px 25px 10px;
     }
     
-    .grid-produtos {
+    .grid-lojas {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 15px;
         margin: 15px 0 30px 0;
         padding: 0 5px;
     }
     
-    .produtos-capa {
+    .lojas-capa {
         min-height: 350px;
         padding: 12px;
     }
     
-    .produto-imagem {
+    .loja-imagem {
         height: 140px;
-    }
+    }    
     
-    .tipo-produto {
+    .tipo-loja {
         font-size: 1rem;
         min-height: 40px;
     }
     
-    .preco-produto {
+    .produto-imagem {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .perfil-loja {
         font-size: 1.1rem;
     }
 }
@@ -269,46 +279,51 @@
         padding-top: 15px;
     }
     
-    .container-produtos {
+    .container-lojas {
         padding: 0 8px 20px 8px;
     }
     
-    .grid-produtos {
-        grid-template-columns: 1fr 1fr;
+    .grid-lojas {
+        grid-template-columns: repeat(1, 1fr);
         gap: 12px;
         margin: 12px 0 25px 0;
         padding: 0;
     }
     
-    .produtos-capa {
+    .lojas-capa {
         min-height: 320px;
         padding: 10px;
     }
     
-    .produto-imagem {
+    .loja-imagem {
         height: 120px;
         margin-bottom: 10px;
     }
     
-    .tipo-produto {
+    .tipo-loja {
         font-size: 0.9rem;
         min-height: 35px;
         margin-bottom: 8px;
     }
     
-    .fabricante .titulo-grid-interno, .descricao .titulo-grid-interno {
+    .descricao .titulo-grid-interno {
         font-size: 0.75rem;
     }
     
-    .fabricante .texto-grid-interno, .descricao .texto-grid-interno {
+    .descricao .texto-grid-interno {
         font-size: 0.8rem;
     }
     
-    .preco-produto {
+    .produto-imagem {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .perfil-loja {
         font-size: 1rem;
     }
     
-    .qnt-produto {
+    .contato-loja {
         font-size: 0.8rem;
     }
-}*/
+}
