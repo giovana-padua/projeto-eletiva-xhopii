@@ -75,6 +75,14 @@
     cursor: pointer;
 }
 
+.produto_infos button.botao:active{
+    border-color: #ef4d28;
+}
+
+.produto_infos button.botao.selecionado{
+    border-color: #fb5630;
+}
+
 /* BOTÃO DE "Comprar Agora" */
 .produto_infos #botaoComprar {
     border: none;

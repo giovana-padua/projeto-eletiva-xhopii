@@ -28,6 +28,7 @@ html, body {
     flex-direction: row;
     align-items: baseline;
     gap: 10px;
+    height: 70px;
 }
 
 .cabecalho .logo img {
@@ -38,6 +39,7 @@ html, body {
 .cabecalho .logo h1 {
     color: rgb(255, 255, 255);
     font-size: 42px;
+    font-weight: bold;
 }
 
 .cabecalho a.sair {
@@ -85,14 +87,14 @@ html, body {
 }
 
 .nav-paginas ul li a {
+    border-radius: 8px;
+    padding: 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
 .nav-paginas ul li a:hover {
-    border-radius: 8px;
-    padding: 5px;
     background-color: #ef4d28;
     cursor: pointer;
 }

@@ -21,24 +21,25 @@
 
     <nav class="nav-paginas">
         <ul>
-            <li><a href="homepage.html">Home</li></a>
-            <li><a href="cad_cliente.html">Cadastro Cliente</li></a>
-            <li><a href="cad_funcionario.html">Cadastro Funcionário</li></a>
-            <li><a href="cad_produto.html">Cadastro Produto</li></a>
-            <li><a href="ver_cliente.html">Ver Clientes</li></a>
-            <li><a href="ver_funcionario.html">Ver Funcionários</li></a>
-            <li><a href="ver_produto.html">Ver Produtos</li></a>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="cad_cliente.html">Cadastro Cliente</a></li>
+            <li><a href="cad_funcionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cad_produto.html">Cadastro Produto</a></li>
+            <li><a href="cad_loja.html">Cadastro Loja</a></li>
+            <li><a href="ver_cliente.html">Ver Clientes</a></li>
+            <li><a href="ver_funcionario.html">Ver Funcionários</a></li>
+            <li><a href="ver_produto.html">Ver Produtos</a></li>
         </ul>
     </nav>
 
     <section class="produto">
         <section class="produto_carrossel">
             <section class="cores">
-                <img src="../img/produto1.png" alt="Camiseta Preta com estampa" onclick="selecionarCor(this)">
-                <img src="../img/produto2.png" alt="Camiseta Azul com estampa" onclick="selecionarCor(this)">
-                <img src="../img/produto3.png" alt="Camiseta Verde com estampa" onclick="selecionarCor(this)">
-                <img src="../img/produto4.png" alt="Camiseta Cinza com estampa" onclick="selecionarCor(this)">
-                <img src="../img/produto5.png" alt="Camiseta Rosa com estampa" onclick="selecionarCor(this)">
+                <img src="../img/produto1.png" alt="Camiseta Preta com estampa" onmousemove="selecionarCor(this)">
+                <img src="../img/produto2.png" alt="Camiseta Azul com estampa" onmousemove="selecionarCor(this)">
+                <img src="../img/produto3.png" alt="Camiseta Verde com estampa" onmousemove="selecionarCor(this)">
+                <img src="../img/produto4.png" alt="Camiseta Cinza com estampa" onmousemove="selecionarCor(this)">
+                <img src="../img/produto5.png" alt="Camiseta Rosa com estampa" onmousemove="selecionarCor(this)">
             </section>
 
             <section class="cor-selecionada">
@@ -52,7 +53,7 @@
             <h3 id="precoProduto" class="preco">R$ 56,90</h3>
             <p id="qtdDisponivel" class="qtd-disponivel">171 peças disponíveis</p>
 
-            <section>
+            <section class="modelos">
                 <p>Modelos:</p>
                 <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
                 <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
@@ -61,7 +62,7 @@
                 <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
             </section>
 
-            <section>
+            <section class="tamanhos">
                 <p>Tamanhos:</p>
                 <button class="botao" id="btnTamanhoP" onclick="mudarTamanho(this)">P</button>
                 <button class="botao" id="btnTamanhoM" onclick="mudarTamanho(this)">M</button>
