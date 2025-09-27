@@ -1,4 +1,53 @@
 /*c s s  p a d r a o*/
+.cabecalho_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #f5f5f5;
+}
+
+.logo_entre_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho_login .logo_entre_login .logo_login img {
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho_login .logo_entre_login .logo_login h1.nome_site {
+    color: #fb5630;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cabecalho_login .logo_entre_login h1 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.cabecalho_login p {
+    color: #fb5630;
+    font-size: 14px;
+}
+
+.cabecalho_login p:hover {
+    color: #f58268;
+    cursor: pointer;
+}
 
 /*c o n t e u d o*/
 
