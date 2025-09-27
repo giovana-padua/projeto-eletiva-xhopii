@@ -83,11 +83,43 @@
     border-color: #fb5630;
 }
 
+.comprar-cupom {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.comprar-cupom a {
+    text-decoration: none;
+}
+
 /* BOTÃO DE "Comprar Agora" */
-.produto_infos #botaoComprar {
+.comprar-cupom  #botaoComprar {
+    font-size: 1rem;
     border: none;
+    border-radius: 8px;
     padding: 20px 10px;
     color: #fff;
-    background-color: #fb5630;
+    background-color: rgb(251, 86, 48);
+    cursor: pointer;
+}
+
+/*VER CUPOM*/
+.ver-cupom {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.ver-cupom:hover {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 86, 48);
+    border-radius: 8px;
+    padding: 20px;
     cursor: pointer;
 }

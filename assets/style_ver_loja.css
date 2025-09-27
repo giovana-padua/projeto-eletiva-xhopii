@@ -1,0 +1,314 @@
+/*c s s  p a d r a o*/
+
+/*c o n t e u d o*/
+.titulo-container {
+    text-align: center;
+    color: rgb(251, 86, 48);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 20px;
+}
+
+.container-lojas {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 700px;
+    padding: 0 20px 40px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-lojas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 30px 0 50px 0;
+    padding: 0 10px;
+}
+
+.lojas-capa {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lojas-capa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(251, 86, 48, 0.15);
+    border-color: rgb(251, 86, 48);
+}
+
+.loja-imagem {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.loja-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.lojas-capa:hover .loja-imagem img {
+    transform: scale(1.05);
+}
+
+.loja-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tipo-loja {
+    font-size: 1.3rem;
+    color: rgb(51, 51, 51);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+.descricao {
+    display: flex;
+    justify-content:space-between;
+    margin-top: auto;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: rgb(100, 100, 100);
+}
+
+.descricao .titulo-grid-interno {
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    margin-bottom: 2px;
+}
+
+.descricao .texto-grid-interno {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-left: 7px;
+}
+
+.produtos-loja {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border: rgb(251, 86, 48) solid 2px;
+    cursor: pointer;
+}
+
+.produto-imagem img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.produto-imagem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(251, 86, 48, 0.15);
+    border-color: rgb(251, 86, 48);
+}
+
+.produto-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.produto-link:hover {
+    text-decoration: none;
+}
+
+.ver-perfil {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.ver-perfil a {
+    text-decoration: none;
+}
+
+.perfil-loja {
+    color: rgb(251, 86, 48);
+    font-weight: 400px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contato-loja {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.perfil-loja:hover, .contato-loja:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 119, 47);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*R e s p o n s i v i d a d e*/
+/*
+@media only screen and (max-width: 1200px) {
+    .container-produtos {
+        padding: 0 15px 30px 15px;
+    }
+    
+    .grid-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        margin: 20px 0 40px 0;
+    }
+    
+    .titulo-container {
+        font-size: 1.3rem;
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {    
+    .grid-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 18px;
+    }
+
+    .fabricante, .descricao, .preco-produto, .qnt-produto  {
+        font-size: 0.85rem;    
+    }
+
+    .produtos-capa {
+        min-height: 400px;
+        padding: 15px;
+    }
+    
+    .produto-imagem {
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .titulo-container {
+        font-size: 1.2rem;
+        padding-top: 20px;
+    }
+    
+    .container-produtos {
+        padding: 0 10px 25px 10px;
+    }
+    
+    .grid-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+        margin: 15px 0 30px 0;
+        padding: 0 5px;
+    }
+    
+    .produtos-capa {
+        min-height: 350px;
+        padding: 12px;
+    }
+    
+    .produto-imagem {
+        height: 140px;
+    }
+    
+    .tipo-produto {
+        font-size: 1rem;
+        min-height: 40px;
+    }
+    
+    .preco-produto {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {    
+    .titulo-container {
+        font-size: 1.1rem;
+        padding-top: 15px;
+    }
+    
+    .container-produtos {
+        padding: 0 8px 20px 8px;
+    }
+    
+    .grid-produtos {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 12px 0 25px 0;
+        padding: 0;
+    }
+    
+    .produtos-capa {
+        min-height: 320px;
+        padding: 10px;
+    }
+    
+    .produto-imagem {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    
+    .tipo-produto {
+        font-size: 0.9rem;
+        min-height: 35px;
+        margin-bottom: 8px;
+    }
+    
+    .fabricante .titulo-grid-interno, .descricao .titulo-grid-interno {
+        font-size: 0.75rem;
+    }
+    
+    .fabricante .texto-grid-interno, .descricao .texto-grid-interno {
+        font-size: 0.8rem;
+    }
+    
+    .preco-produto {
+        font-size: 1rem;
+    }
+    
+    .qnt-produto {
+        font-size: 0.8rem;
+    }
+}*/
