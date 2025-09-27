@@ -1,97 +1,6 @@
-* {
-    margin: 0;
-    font-family: Helvetica,     Arial, sans-serif;
-}
+/*c s s  p a d r a o*/
 
-body {
-    background-color: #d7d7d7;
-}
-
-/* ca b e ç a l h o */
-
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0px 20px;
-    background-color: rgb(251, 86, 48);
-}
-
-.cabecalho .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 10px;
-}
-
-.cabecalho .logo img {
-    width: 60px;
-    height: 60px;
-}
-
-.cabecalho .logo h1 {
-    color: rgb(255, 255, 255);
-    font-size: 42px;
-}
-
-.cabecalho a.sair {
-    text-decoration: none;
-}
-
-.cabecalho a.sair button#sair {
-    border: none;
-    border-radius: 8px;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    font-weight: 500;
-    background-color: transparent;
-}
-
-.cabecalho a.sair button#sair:hover {
-    background-color: rgb(251, 119, 47);
-    cursor: pointer;
-}
-
-/*b a r r a  d e  n a v e g a ç ã o*/
-
-.nav-paginas {
-    display: flex;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    background-color: rgb(251, 119, 47);
-}
-
-.nav-paginas ul {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    list-style: none;
-    margin: 0; 
-    padding: 0;
-}
-
-.nav-paginas li{
-    color: rgb(255, 255, 255);
-}
-
-.nav-paginas ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
-}
-
-.nav-paginas ul li a:hover {
-    color: rgb(218, 218, 218);
-    text-decoration: underline;
-}
-
-/*c o r p o   p r i n c i p a l*/
-
+/*c o n t e u d o*/
 .titulo-container {
     text-align: center;
     color: rgb(251, 86, 48);
@@ -100,7 +9,6 @@ body {
     margin: 0;
     text-transform: uppercase;
     position: relative;
-    
     padding-top: 20px;
 }
 
@@ -239,108 +147,6 @@ body {
     font-weight: 400;
 }
 
-/*r o d a p é*/
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(245, 245, 245);
-}
-
-.infos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    width: 100%;
-    max-width: 1400px;
-    padding: 50px 20px;
-    text-align: left;
-}
-
-.infos section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-h4.titulo_secao_footer {
-    color: rgb(39, 39, 39);
-    font-size: 1em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.infos section p {
-    color: rgb(151, 151, 151);
-    font-size: 0.9em;
-    line-height: 1.4;
-    margin: 0;
-}
-
-.infos section p a {
-    color: rgb(151, 151, 151);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.pagamento section.imgs-grid {
-    display: grid;
-    grid-template-rows: 20px 20px 20px;
-    grid-template-columns: auto auto auto;
-}
-
-.infos section p a:hover {
-    color: rgb(251, 86, 48);
-}
-
-.pagamento .imgs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    max-width: 180px;
-}
-
-.pagamento .imgs-grid img {
-    width: 100%;
-    height: auto;
-    max-width: 50px;
-    object-fit: contain;
-}
-
-.siga article {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.siga img {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-}
-
-.siga p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-.direitos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border-top: 1px solid rgb(151, 151, 151);
-    padding: 20px;
-    color: rgb(39, 39, 39);
-    text-align: center;
-    font-size: 0.9em;
-}
-
 /*R e s p o n s i v i d a d e*/
 
 @media only screen and (max-width: 1200px) {
@@ -358,26 +164,9 @@ h4.titulo_secao_footer {
         font-size: 1.3rem;
         padding-top: 25px;
     }
-    .rodape {
-        max-width: 90%;
-    }
 }
 
-@media only screen and (max-width: 900px) {
-    .cabecalho {
-        height: 70px;
-        padding: 0 15px;
-    }
-    
-    .cabecalho .logo h1 {
-        font-size: 36px;
-    }
-    
-    .nav-paginas ul {
-        gap: 20px;
-        padding: 8px 15px;
-    }
-    
+@media only screen and (max-width: 900px) {    
     .grid-produtos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 18px;
@@ -395,64 +184,9 @@ h4.titulo_secao_footer {
     .produto-imagem {
         height: 160px;
     }
-    
-    .infos {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 30px 20px;
-        gap: 30px;
-    }
-    
-    .infos section p {
-        font-size: 0.85em;
-    }
-
-    h4.titulo_secao_footer {
-        font-size: 1em;
-    }
-        
-    .siga article {
-        gap: 6px;
-    }
-
-    .pagamento .imgs-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 120px;
-    }
-
 }
 
-@media only screen and (max-width: 768px) {
-    .cabecalho {
-        height: 60px;
-        padding: 0 10px;
-    }
-    
-    .cabecalho .logo img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .cabecalho .logo h1 {
-        font-size: 28px;
-    }
-    
-    .cabecalho a.sair button#sair {
-        padding: 6px 12px;
-        font-size: 0.9em;
-    }
-    
-    .nav-paginas {
-        padding: 0 10px;
-    }
-    
-    .nav-paginas ul {
-        gap: 15px;
-        padding: 5px;
-        font-size: 0.9rem;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
+@media only screen and (max-width: 768px) {    
     .titulo-container {
         font-size: 1.2rem;
         padding-top: 20px;
@@ -486,61 +220,9 @@ h4.titulo_secao_footer {
     .preco-produto {
         font-size: 1.1rem;
     }
-    
-    .infos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 30px 15px;
-    }
-    
-    h4.titulo_secao_footer {
-        font-size: 1rem;
-    }
-    
-    .infos section p {
-        font-size: 0.85em;
-    }
-
-    .direitos {
-        padding: 15px 10px;
-        font-size: 0.85em;
-    }
 }
 
-@media only screen and (max-width: 480px) {
-    .cabecalho {
-        height: 50px;
-        padding: 0 8px;
-    }
-    
-    .cabecalho .logo img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .cabecalho .logo h1 {
-        font-size: 24px;
-    }
-    
-    .cabecalho .logo {
-        gap: 8px;
-    }
-    
-    .cabecalho a.sair button#sair {
-        padding: 4px 8px;
-        font-size: 0.8em;
-    }
-    
-    .nav-paginas ul {
-        gap: 10px;
-        padding: 3px;
-        font-size: 0.8rem;
-    }
-    
-    .nav-paginas ul li a {
-        padding: 3px 6px;
-    }
-    
+@media only screen and (max-width: 480px) {    
     .titulo-container {
         font-size: 1.1rem;
         padding-top: 15px;
@@ -587,38 +269,5 @@ h4.titulo_secao_footer {
     
     .qnt-produto {
         font-size: 0.8rem;
-    }
-    
-    .infos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 25px 10px;
-        text-align: center;
-    }
-    
-    .infos section {
-        align-items: center;
-    }
-    
-    h4.titulo_secao_footer {
-        font-size: 0.9rem;
-    }
-    
-    .infos section p {
-        font-size: 0.8em;
-    }
-    
-    .siga article {
-        justify-content: center;
-    }
-    
-    .pagamento .imgs-grid {
-        max-width: 100px;
-        margin: 0 auto;
-    }
-    
-    .direitos {
-        padding: 12px 8px;
-        font-size: 0.8em;
     }
 }
