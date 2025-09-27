@@ -80,7 +80,7 @@
 }
 
 .cupom-imagem img {
-    width: 100px;
+    width: 75%;
     border-radius: 50%;    
 }
 
@@ -90,7 +90,7 @@
     line-height: 40px;
 }
 
-.cupom-info{
+.cupom-info {
     display: flex;
     flex-direction: column;
     width: max-content;
@@ -104,7 +104,7 @@
     margin-top: 10px;
 }
 
-.limite-cupom{
+.limite-cupom {
     margin-left: -110px;
     margin-top: 5px;
 }
@@ -153,7 +153,7 @@
     margin-top: 25px;    
 }
 
-.validade{
+.validade {
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
@@ -177,5 +177,19 @@
 }
 
 .botao-resgatar:hover {
+    text-decoration: none;
+}
+
+.botao-resgatar-of {
+    padding: 5px;
+    border-radius: 10%;
+    margin-top: 5px;
+    margin-right: -110%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(202, 2, 2);
+    transition: transform 0.3s ease;
+}
+
+.botao-resgatar-of:hover {
     text-decoration: none;
 }
